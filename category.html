@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shop NOVA fashion.">
+    <title>Category — NOVA</title>
+    <link rel="icon" href="./images/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/shop.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <div class="announcement">FREE SHIPPING ON ORDERS OVER $100 <a href="shop.html">SHOP NOW <span>→</span></a></div>
+    <header class="site-header">
+        <div class="container nav-wrap"><a class="logo" href="index.html">NOVA<span>.</span></a><button
+                class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><i
+                    class="fa-solid fa-bars"></i></button>
+            <nav class="main-nav" id="mainNav"><a href="index.html">Home</a><a href="shop.html">Shop</a><a
+                    href="category.html?category=t-shirts">Categories</a><a href="index.html#about">About</a><a
+                    href="index.html#contact">Contact</a></nav>
+            <div class="nav-actions"><a href="search.html"><i class="fa-solid fa-magnifying-glass"></i></a><a
+                    href="wishlist.html" class="icon-count"><i class="fa-regular fa-heart"></i><b
+                        id="wishlistCount">0</b></a><a href="cart.html" class="icon-count"><i
+                        class="fa-solid fa-bag-shopping"></i><b id="cartCount">0</b></a></div>
+        </div>
+    </header>
+    <main>
+        <section class="page-head container">
+            <p class="eyebrow">CATEGORY</p>
+            <h1 id="categoryTitle">Category</h1>
+            <p id="categoryDescription">Explore the collection.</p>
+        </section>
+        <section class="shop-layout container">
+            <aside class="filters" id="filtersPanel">
+                <div class="filter-header">
+                    <h2>Filters</h2><button id="closeFilters" class="filter-close" aria-label="Close filters">×</button>
+                </div>
+                <div class="filter-group">
+                    <h3>Categories</h3><label><input type="checkbox" value="t-shirts" data-filter="category">
+                        T-Shirts</label><label><input type="checkbox" value="shirts" data-filter="category">
+                        Shirts</label><label><input type="checkbox" value="jeans" data-filter="category">
+                        Jeans</label><label><input type="checkbox" value="hoodies" data-filter="category">
+                        Hoodies</label><label><input type="checkbox" value="shorts" data-filter="category">
+                        Shorts</label><label><input type="checkbox" value="jackets" data-filter="category">
+                        Jackets</label>
+                </div>
+                <div class="filter-group">
+                    <h3>Price</h3>
+                    <div class="price-inputs"><input id="minPrice" type="number" min="0" placeholder="Min"><input
+                            id="maxPrice" type="number" min="0" placeholder="Max"></div><input id="priceRange"
+                        class="range" type="range" min="20" max="300" value="300">
+                    <p>Up to $<span id="priceValue">300</span></p>
+                </div>
+                <div class="filter-group">
+                    <h3>Sizes</h3>
+                    <div class="check-grid"><label><input type="checkbox" value="XXS" data-filter="size">
+                            XX-Small</label><label><input type="checkbox" value="XS" data-filter="size">
+                            X-Small</label><label><input type="checkbox" value="S" data-filter="size">
+                            Small</label><label><input type="checkbox" value="M" data-filter="size">
+                            Medium</label><label><input type="checkbox" value="L" data-filter="size">
+                            Large</label><label><input type="checkbox" value="XL" data-filter="size">
+                            X-Large</label><label><input type="checkbox" value="2XL" data-filter="size">
+                            2X-Large</label><label><input type="checkbox" value="3XL" data-filter="size">
+                            3X-Large</label></div>
+                </div>
+                <div class="filter-group">
+                    <h3>Colors</h3>
+                    <div class="check-grid"><label><input type="checkbox" value="Black" data-filter="color">
+                            Black</label><label><input type="checkbox" value="White" data-filter="color">
+                            White</label><label><input type="checkbox" value="Red" data-filter="color">
+                            Red</label><label><input type="checkbox" value="Blue" data-filter="color">
+                            Blue</label><label><input type="checkbox" value="Green" data-filter="color">
+                            Green</label><label><input type="checkbox" value="Gray" data-filter="color"> Gray</label>
+                    </div>
+                </div>
+                <button id="clearFilters" class="clear-filter">Clear all filters</button>
+            </aside>
+            <div class="products-area">
+                <div class="toolbar"><button class="mobile-filter-btn" id="openFilters"><i
+                            class="fa-solid fa-sliders"></i> Filters</button><span id="productCount">0
+                        products</span><select id="sortProducts" aria-label="Sort products">
+                        <option value="default">Default</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="rating">Highest Rated</option>
+                        <option value="newest">Newest</option>
+                    </select></div>
+                <div id="shopProducts" class="product-grid"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container footer-bottom"><span>© 2026 NOVA. All rights reserved.</span><a href="index.html">Back to
+                home ↑</a></div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/shop.js"></script>
+    <script src="js/category.js"></script>
+</body>
+
+</html>

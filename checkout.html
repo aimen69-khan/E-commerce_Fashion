@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout — NOVA</title>
+    <link rel="icon" href="./images/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/checkout.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container nav-wrap"><a class="logo" href="index.html">NOVA<span>.</span></a><a class="checkout-back"
+                href="cart.html">← Back to cart</a>
+            <div class="nav-actions"><a href="cart.html" class="icon-count"><i class="fa-solid fa-bag-shopping"></i><b
+                        id="cartCount">0</b></a></div>
+        </div>
+    </header>
+    <main>
+        <section class="page-head container">
+            <p class="eyebrow">SECURE CHECKOUT</p>
+            <h1>Complete your order</h1>
+        </section>
+        <section class="checkout-layout container">
+            <form id="checkoutForm" class="checkout-form">
+                <div class="form-section">
+                    <h2>Customer information</h2>
+                    <div class="form-grid"><label>First name<input name="firstName" required
+                                autocomplete="given-name"></label><label>Last name<input name="lastName" required
+                                autocomplete="family-name"></label><label>Email<input type="email" name="email" required
+                                autocomplete="email"></label><label>Phone<input name="phone" required
+                                autocomplete="tel"></label></div>
+                </div>
+                <div class="form-section">
+                    <h2>Shipping address</h2>
+                    <div class="form-grid"><label class="full">Address<input name="address" required
+                                autocomplete="street-address"></label><label class="full">Apartment / Suite<input
+                                name="apartment"></label><label>City<input name="city" required
+                                autocomplete="address-level2"></label><label>State / Province<input name="state"
+                                required autocomplete="address-level1"></label><label>Postal code<input name="postal"
+                                required autocomplete="postal-code"></label><label>Country<select name="country"
+                                required>
+                                <option value="">Select country</option>
+                                <option>Pakistan</option>
+                                <option>United States</option>
+                                <option>Canada</option>
+                                <option>United Kingdom</option>
+                                <option>Australia</option>
+                            </select></label></div>
+                </div>
+                <div class="form-section">
+                    <h2>Payment method</h2>
+                    <div class="payment-options"><label><input type="radio" name="payment" value="cod" checked>
+                            <span><strong>Cash on Delivery</strong><small>Pay when your order
+                                    arrives.</small></span></label><label><input type="radio" name="payment"
+                                value="card"> <span><strong>Credit / Debit Card</strong><small>Demo option — no payment
+                                    is processed.</small></span></label><label><input type="radio" name="payment"
+                                value="paypal"> <span><strong>PayPal</strong><small>Demo option — no payment is
+                                    processed.</small></span></label></div>
+                </div><button class="btn btn-dark checkout-submit" type="submit">Place Order <span>→</span></button>
+                <p id="checkoutMessage" class="form-message"></p>
+            </form>
+            <aside id="checkoutSummary" class="summary-card"></aside>
+        </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/checkout.js"></script>
+</body>
+
+</html>

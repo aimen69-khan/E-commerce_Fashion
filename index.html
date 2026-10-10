@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NOVA — modern fashion and lifestyle store.">
+  <title>NOVA — Fashion & Lifestyle</title>
+  <link rel="icon" href="./images/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <div class="announcement">FREE SHIPPING ON ORDERS OVER $100 <a href="shop.html">SHOP NOW <span>→</span></a></div>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="index.html">NOVA<span>.</span></a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+      <nav class="main-nav" id="mainNav">
+        <a class="active" href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="category.html?category=t-shirts">Categories</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="search.html" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href="wishlist.html" aria-label="Wishlist" class="icon-count"><i class="fa-regular fa-heart"></i><b id="wishlistCount">0</b></a>
+        <a href="cart.html" aria-label="Cart" class="icon-count"><i class="fa-solid fa-bag-shopping"></i><b id="cartCount">0</b></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-media"></div>
+      <div class="hero-content container">
+        <p class="eyebrow">AUTUMN / WINTER 2026</p>
+        <h1>Wear your<br><em>confidence.</em></h1>
+        <p class="hero-copy">Contemporary essentials designed for everyday movement, made to stay in your rotation season after season.</p>
+        <div class="hero-actions">
+          <a class="btn btn-dark" href="shop.html">Shop Now <span>→</span></a>
+          <a class="btn btn-light" href="category.html?category=jackets">Explore Collection <span>→</span></a>
+        </div>
+      </div>
+      <div class="hero-badge">NEW<br>SEASON</div>
+    </section>
+
+    <section class="section container">
+      <div class="section-heading">
+        <div><p class="eyebrow">JUST DROPPED</p><h2>New Arrivals</h2></div>
+        <a href="shop.html" class="text-link">View all <span>→</span></a>
+      </div>
+      <div class="product-grid product-grid-home" id="newArrivals"></div>
+    </section>
+
+    <section class="section section-muted">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="eyebrow">CUSTOMER FAVORITES</p><h2>Top Selling</h2></div>
+          <a href="shop.html?sort=rating" class="text-link">Shop best sellers <span>→</span></a>
+        </div>
+        <div class="product-grid product-grid-home" id="topSelling"></div>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="section-heading center-heading"><div><p class="eyebrow">SHOP BY STYLE</p><h2>Categories</h2></div></div>
+      <div class="category-grid">
+        <a class="category-card category-tshirts" href="category.html?category=t-shirts"><span>T-Shirts</span><small>Everyday essentials</small></a>
+        <a class="category-card category-shirts" href="category.html?category=shirts"><span>Shirts</span><small>Clean & refined</small></a>
+        <a class="category-card category-jeans" href="category.html?category=jeans"><span>Jeans</span><small>Built to move</small></a>
+        <a class="category-card category-hoodies" href="category.html?category=hoodies"><span>Hoodies</span><small>Relaxed layers</small></a>
+        <a class="category-card category-shorts" href="category.html?category=shorts"><span>Shorts</span><small>Lightweight comfort</small></a>
+        <a class="category-card category-jackets" href="category.html?category=jackets"><span>Jackets</span><small>Statement outerwear</small></a>
+      </div>
+    </section>
+
+    <section class="promo container">
+      <div class="promo-image"></div>
+      <div class="promo-content"><p class="eyebrow">LIMITED TIME</p><strong>50% OFF</strong><h2>Make room for<br>something new.</h2><p>Selected styles, limited quantities. Refresh your wardrobe without the full-price regret.</p><a class="btn btn-light" href="shop.html">Shop Sale <span>→</span></a></div>
+    </section>
+
+    <section class="section container" id="about">
+      <div class="section-heading center-heading"><div><p class="eyebrow">THE NOVA STANDARD</p><h2>Loved by our community</h2></div></div>
+      <div class="reviews-grid">
+        <article class="review-card"><div class="review-top"><span class="avatar">AR</span><div><strong>Alex R.</strong><small>Verified customer</small></div></div><div class="stars">★★★★★</div><p>“The fit is exactly what I wanted. Clean, comfortable and somehow makes every outfit look more intentional.”</p></article>
+        <article class="review-card"><div class="review-top"><span class="avatar">SM</span><div><strong>Sarah M.</strong><small>Verified customer</small></div></div><div class="stars">★★★★★</div><p>“Fast delivery and genuinely great quality. The jacket has become my everyday favorite.”</p></article>
+        <article class="review-card"><div class="review-top"><span class="avatar">JK</span><div><strong>Jordan K.</strong><small>Verified customer</small></div></div><div class="stars">★★★★☆</div><p>“Simple website, easy checkout, and the clothes look even better in person. Will order again.”</p></article>
+      </div>
+    </section>
+
+    <section class="newsletter container">
+      <div><p class="eyebrow">STAY IN THE LOOP</p><h2>10% off your first order.</h2><p>Get new drops, private offers and style notes in your inbox.</p></div>
+      <form id="newsletterForm"><input type="email" id="newsletterEmail" placeholder="Your email address" required><button class="btn btn-dark" type="submit">Subscribe</button></form>
+      <p class="form-message" id="newsletterMessage"></p>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="container footer-grid">
+      <div><a class="logo footer-logo" href="index.html">NOVA<span>.</span></a><p>Modern clothing for people who move with purpose.</p><div class="socials"><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a><a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a></div></div>
+      <div><h3>Explore</h3><a href="shop.html">Shop</a><a href="category.html?category=t-shirts">T-Shirts</a><a href="category.html?category=jeans">Jeans</a><a href="category.html?category=jackets">Jackets</a></div>
+      <div><h3>Help</h3><a href="cart.html">Cart</a><a href="wishlist.html">Wishlist</a><a href="checkout.html">Checkout</a><a href="#contact">Contact</a></div>
+      <div><h3>Contact</h3><p>hello@novastore.example</p><p>Mon–Fri, 9am–6pm</p><p>Worldwide shipping</p></div>
+    </div>
+    <div class="footer-bottom container"><span>© 2026 NOVA. All rights reserved.</span><span>Designed for the everyday.</span></div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"></script>
+  <script src="js/products.js"></script><script src="js/main.js"></script>
+</body>
+</html>
